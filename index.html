@@ -1,56 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Accessibility</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Web Accessibility</title>
-</head>
+  <body>
+    <h1>Links</h1>
 
-<body>
-  <header>
-    <h1>Web Accessibility</h1>
-    <img src="" alt="">
-  </header>
-  <nav>
-    <a href="#1">什么是无障碍</a>
-    <a href="#2">有哪些辅助技术</a>
-    <a href="#3">如何提高网页无障碍</a>
-  </nav>
-  <main>
-    <article id="1">
-      <h2>
-        什么是无障碍
-      </h2>
-      <p>
-        无障碍是指具有使不同设备或用户访问内容的能力。
-        无障碍不只与残障人士相关，也利于其它群体或场景，比如：
-      <ol>
-        <li>网络慢</li>
-        <li>单手使用手机</li>
-        <li>暂时性失明</li>
-      </ol>
-      </p>
-    </article>
-    <article id="2">
-      <h2>
-        有哪些辅助技术
-      </h2>
-      <ol>
-        <li>屏幕阅读器：通过此设备听到Web内容</li>
-        <li>盲文显示器：通过触觉</li>
-        <li>屏幕放大镜：放大屏幕上的文本</li>
-      </ol>
-    </article>
-    <article id="3">
-      <h2>
-        如何提高网页无障碍
-      </h2>
-      <ol>
+    <p>This is a link to <a href="https://www.mozilla.org">Mozilla</a>.</p>
 
-      </ol>
-    </article>
-  </main>
-</body>
+    <p>
+      Another link, to the
+      <a href="https://developer.mozilla.org">Mozilla Developer Network</a>.
+    </p>
 
+    <h2>Buttons</h2>
+
+    <p>
+      <button data-message="This is from the first button">Click me!</button>
+      <button data-message="This is from the second button">
+        Click me too!
+      </button>
+      <button data-message="This is from the third button">And me!</button>
+    </p>
+
+    <h2>Form</h2>
+
+    <form>
+      <div>
+        <label for="name">Fill in your name:</label>
+        <input type="text" id="name" name="name" />
+      </div>
+      <div>
+        <label for="age">Enter your age:</label>
+        <input type="text" id="age" name="age" />
+      </div>
+      <div>
+        <label for="mood">Choose your mood:</label>
+        <select id="mood" name="mood">
+          <option>Happy</option>
+          <option>Sad</option>
+          <option>Angry</option>
+          <option>Worried</option>
+        </select>
+      </div>
+    </form>
+  </body>
 </html>
